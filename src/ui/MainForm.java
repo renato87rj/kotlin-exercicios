@@ -4,13 +4,13 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class mainForm extends JFrame {
+public class MainForm extends JFrame {
     private JPanel rootPanel;
     private JButton buttonNewContacts;
     private JButton buttonRemove;
     private JTable tableContacts;
 
-    public mainForm() {
+    public MainForm() {
         setContentPane(rootPanel);
         setSize(500, 250);
         setVisible(true);
@@ -22,7 +22,7 @@ public class mainForm extends JFrame {
         buttonNewContacts.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                new contentForm();
+                new ContentForm();
                 dispose();
             }
         });

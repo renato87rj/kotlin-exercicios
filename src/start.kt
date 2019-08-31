@@ -1,5 +1,5 @@
-import ui.mainForm
+import ui.MainForm
 
 fun main() {
-    mainForm()
+    MainForm()
 }

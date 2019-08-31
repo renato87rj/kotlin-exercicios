@@ -4,14 +4,14 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class contentForm extends JFrame{
+public class ContentForm extends JFrame{
     private JPanel rootPanel;
     private JTextField textName;
     private JTextField textFone;
     private JButton buttonCancel;
     private JButton buttonSave;
 
-    public contentForm() {
+    public ContentForm() {
         setContentPane(rootPanel);
         setSize(500, 250);
         setVisible(true);
@@ -29,7 +29,7 @@ public class contentForm extends JFrame{
         buttonCancel.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                new mainForm();
+                new MainForm();
                 dispose();
             }
         });
